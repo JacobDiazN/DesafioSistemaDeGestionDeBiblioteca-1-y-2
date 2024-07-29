@@ -1,0 +1,58 @@
+<section class="container pt-5 pb-5" th:fragment="carrusel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item  carousel_item active">
+                <img src="/img/carrusel/carrusel01.jpg" class="BorderRaidus d-block w-100" alt="...">
+                <div class="content">
+                    <div class="carousel_topic animation-delay-1 hidden">Libros</div>
+                    <div class="pt-2 d-flex justify-content-center carousel_topic animation-delay-2 hidden">
+                        <div class="m-2">
+                            <a th:href="@{/books}" class="btn btn-light text-gris-700 mt-2">Ir a la Página</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item  carousel_item">
+                <img src="/img/carrusel/carrusel02.jpg" class="BorderRaidus d-block w-100" alt="...">
+                <div class="content">
+                    <div class="carousel_topic animation-delay-1 hidden">Autores</div>
+                    <div class="pt-2 d-flex justify-content-center animation-delay-2 hidden">
+                        <div class="m-2">
+                            <a th:href="@{/authors}" class="btn btn-light text-gris-700 mt-2">Ir a la Página</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item  carousel_item">
+                <img src="/img/carrusel/carrusel03.jpg" class="BorderRaidus d-block w-100" alt="...">
+                <div class="content">
+                    <div class="carousel_topic animation-delay-1 hidden">Libros Disponibles</div>
+                    <div class="pt-2 d-flex justify-content-center animation-delay-2 hidden">
+                        <div class="m-2">
+                            <a th:href="@{/books/available}" class="btn btn-light text-gris-700 mt-2">Ir a la Página</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item  carousel_item">
+                <img src="/img/carrusel/carrusel04.jpg" class="BorderRaidus d-block w-100" alt="...">
+                <div class="content">
+                    <div class="carousel_topic animation-delay-1 hidden">Libros Prestados</div>
+                    <div class="pt-2 d-flex justify-content-center animation-delay-2 hidden">
+                        <div class="m-2">
+                            <a th:href="@{/books/not-available}" class="btn btn-light text-gris-700 mt-2">Ir a la Página</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span id="prev" class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span id="next" class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
